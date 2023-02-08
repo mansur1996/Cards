@@ -198,6 +198,7 @@
             android:gravity="center"
             android:padding="@dimen/padding_standard"
             android:text="@string/continue_on"
+            android:enabled="false"
             android:textStyle="bold"
             android:foreground="?attr/selectableItemBackground"
             android:textColor="@color/btn_text_color"
