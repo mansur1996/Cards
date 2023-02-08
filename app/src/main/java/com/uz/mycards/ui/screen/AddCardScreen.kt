@@ -60,7 +60,7 @@ class AddCardScreen : Fragment(R.layout.screen_add_card) {
         }
 
         btnScan.setOnClickListener {
-
+            snackMessage("Clicked")
         }
 
         btnContinue.setOnClickListener {

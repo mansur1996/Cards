@@ -134,6 +134,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_scan"
+                    android:foreground="?attr/selectableItemBackground"
                     android:contentDescription="@string/cards" />
 
                 <TextView
