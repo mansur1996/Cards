@@ -17,6 +17,7 @@
     <string name="sqb">SQB</string>
     <string name="invalid_month">Mavjud bo\'lmagan oy</string>
     <string name="invalid_month_day">Mavjud bo\'lmagan oy kuni</string>
+    <string name="invalid_validity_date">Yaroqlilik muddati xato kiritilgan</string>
     <string name="uz_milliy_bank">O\'ZMILLIYBANK</string>
     <string name="xalq_bank">XALQ BANK</string>
 </resources>

@@ -72,9 +72,13 @@ class AddCardScreen : Fragment(R.layout.screen_add_card) {
             val cardNumber = etCardNumber.text.toString().trim()
             val validityPeriod = etValidityPeriodOfTheCard.text.toString().trim()
 
-            val request =
-                GetCardsResponse(card_number = cardNumber, validity_period = validityPeriod)
-            viewModel.uploadCards(request)
+            if (isValidValiditDate){
+                val request =
+                    GetCardsResponse(card_number = cardNumber, validity_period = validityPeriod)
+                viewModel.uploadCards(request)
+            }else{
+                snackMessage(getString(R.string.invalid_validity_date))
+            }
         }
 
         etCardNumber.addTextChangedListener(object : TextWatcher {
