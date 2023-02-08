@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="1dp"
+    android:layout_marginTop="1dp"
+    android:layout_marginBottom="@dimen/margin_standard"
+    android:elevation="2dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bgCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_xb"
+        android:padding="@dimen/padding_standard">
+
+        <TextView
+            android:id="@+id/tvBank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="SQB"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/app_title_text_size"
+            app:layout_constraintBottom_toTopOf="@+id/card"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvIsMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_standard"
+            app:layout_constraintBottom_toBottomOf="@id/tvBank"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvBank"
+            tools:text="Asosiy" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_standard"
+            android:elevation="2dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
+            app:layout_constraintTop_toBottomOf="@id/tvBank">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_blur"
+                android:padding="@dimen/padding_standard"
+                android:backgroundTint="@color/color_blur"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvLogoCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:elevation="2dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="2dp">
+
+                    <ImageView
+                        android:layout_marginHorizontal="@dimen/margin_middle"
+                        android:id="@+id/logoCard"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:background="@color/white"
+                        android:src="@drawable/ic_uz"
+                        android:contentDescription="@string/cards" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tvBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="0.00 UZS"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/app_title_text_size"
+                    app:layout_constraintTop_toBottomOf="@+id/cvLogoCard"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvCardNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="8600 00** **** 0000"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="@dimen/margin_small"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvBalance"
+                    android:textSize="@dimen/text_size_standard" />
+
+
+                <TextView
+                    android:id="@+id/tvValidityDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="12/25"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tvCardNumber"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvCardNumber"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_standard" />
+
+                <TextView
+                    android:id="@+id/tvCardOwnerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Mirzayev Mansur"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:textColor="@color/white"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvCardNumber"
+                    android:textSize="@dimen/text_size_standard" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

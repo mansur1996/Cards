@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">My Cards</string>
+    <string name="cards">Kartalar</string>
+    <string name="fr_cards">FR kartalari</string>
+    <string name="adding_card">Karta qo\'shish</string>
+    <string name="add_info_of_card">Karta ma\'lumotlarini kiriting</string>
+    <string name="card_number">Karta raqami</string>
+    <string name="validity_period_of_the_card">Amal qilish sanasi</string>
+    <string name="continue_on">Davom etish</string>
+    <string name="all">Hammasi</string>
+    <string name="favorite">Sevimli</string>
+    <string name="uzcard">UzCard</string>
+    <string name="humo">Humo</string>
+    <string name="national_card">Xalqaro karta</string>
+    <string name="main">Asosiy</string>
+    <string name="sum">UZS</string>
+    <string name="sqb">SQB</string>
+    <string name="uz_milliy_bank">O\'ZMILLIYBANK</string>
+    <string name="xalq_bank">XALQ BANK</string>
+</resources>
